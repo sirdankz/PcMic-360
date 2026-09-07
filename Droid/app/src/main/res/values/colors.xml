@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pcmic_bg">#0B111B</color>
+    <color name="pcmic_panel">#141C28</color>
+    <color name="pcmic_panel2">#182231</color>
+    <color name="pcmic_border">#263347</color>
+    <color name="pcmic_text">#F2F6FC</color>
+    <color name="pcmic_subtext">#98A6B8</color>
+    <color name="pcmic_accent">#3B82F6</color>
+    <color name="pcmic_good">#37C88A</color>
+    <color name="pcmic_warn">#F0B84B</color>
+    <color name="pcmic_bad">#E75A63</color>
+</resources>

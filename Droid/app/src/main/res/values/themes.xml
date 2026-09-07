@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PcMic360" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/pcmic_bg</item>
+        <item name="android:navigationBarColor">@color/pcmic_bg</item>
+        <item name="android:colorAccent">@color/pcmic_accent</item>
+        <item name="android:windowBackground">@color/pcmic_bg</item>
+    </style>
+</resources>

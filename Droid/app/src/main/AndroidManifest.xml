@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PcMic-360 intentionally keeps permissions minimal. -->
+    <!-- INTERNET is a normal permission (no runtime prompt) and is used only for the Xbox IP entered by the user. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- The ONLY runtime permission PcMic-360 requests. Requested only when START LIVE MIC is pressed. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Required by Android for a microphone foreground service. These do not create runtime permission dialogs. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:label="PcMic-360"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.PcMic360">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PcMicService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+    </application>
+
+</manifest>
