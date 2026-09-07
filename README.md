@@ -1,6 +1,6 @@
 # PcMic-360
 
-**Use a Windows PC microphone as an Xbox 360 voice-chat microphone on a homebrew-enabled console.**
+**Use a Windows PC or android device microphone as an Xbox 360 voice-chat microphone on a homebrew-enabled console.**
 
 PcMic-360 streams low-latency microphone audio over your local network to an Xbox 360 XEX that dynamically connects to the system voice path. The current stable source in this repository is **PC GUI v1.5 + XEX v7.04**.
 
